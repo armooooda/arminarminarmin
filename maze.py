@@ -1,5 +1,8 @@
 # lets set up maze
 # 1s are walls
+# this particular maze is not 10x10 but my code is fine with whatever size
+# assuming its actually a maze, i guess 1x2 would be the minimum? there's no checks for that though
+# but that's not hard to build
 
 maze1 = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 0, 0, 1, 1, 1, 1],
@@ -13,9 +16,6 @@ maze1 = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          [0, 0, 1, 0, 1, 0, 0, 0, 0, 0],
          [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]]
 
-
-# we start bot left, end bot right
-# so row[9], col[0], end row[9], col[9]
 
 def water_it_up(row, col, maze):
     if not maze[row][col]:
